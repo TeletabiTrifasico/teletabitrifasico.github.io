@@ -1,0 +1,128 @@
+:root {
+    --bg-primary: hsl(48, 100%, 97%);
+    --bg-secondary: hsl(48, 55%, 93%);
+    --bg-tertiary: hsl(48, 45%, 90%);
+    --text-primary: hsl(35, 25%, 15%);
+    --text-secondary: hsl(35, 20%, 25%);
+    --text-tertiary: hsla(35, 15%, 35%, .7);
+    --accent-primary: hsl(45, 100%, 40%);
+    --accent-secondary: hsl(30, 70%, 45%);
+    --accent-tertiary: hsl(15, 70%, 55%);
+    --border-color: hsl(48, 25%, 80%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+h1, h2, h3 {
+    color: var(--text-primary);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.container {
+    flex: 1;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar a {
+    color: var(--text-primary);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: var(--bg-secondary);
+    color: var(--accent-primary);
+}
+
+.project {
+    background: var(--bg-secondary);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+}
+
+.profile-text {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
