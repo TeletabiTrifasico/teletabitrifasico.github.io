@@ -60,9 +60,10 @@ p {
 
 .navbar a {
     color: var(--text-primary);
-    padding: 15px 20px;
+    padding: 20px 20px;
     text-decoration: none;
     text-align: center;
+    flex: 1;
 }
 
 .navbar a:hover {
@@ -118,6 +119,20 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 15px;
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
     }
 }
 
