@@ -56,14 +56,16 @@ p {
     justify-content: center;
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
 }
 
 .navbar a {
     color: var(--text-primary);
-    padding: 20px 20px;
+    padding: 20px;
     text-decoration: none;
     text-align: center;
-    flex: 1;
+    min-width: 200px;
+    flex-grow: 1;
 }
 
 .navbar a:hover {
@@ -88,6 +90,7 @@ footer {
     width: 100%;
     border-top: 1px solid var(--border-color);
     margin-top: auto;
+    font-size: 0.8rem; /* Add this line to keep text small */
 }
 
 .profile-section {
@@ -126,13 +129,16 @@ footer {
     }
 
     .navbar a {
-        padding: 15px;
-        font-size: 1.2rem;
-        border-bottom: 1px solid var(--border-color);
+        width: 100%;
+        padding: 25px;
     }
 
     .navbar a:last-child {
         border-bottom: none;
+    }
+    
+    footer {
+        font-size: 0.8rem; /* Keep the same size in mobile */
     }
 }
 
