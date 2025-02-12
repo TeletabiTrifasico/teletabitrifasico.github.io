@@ -20,16 +20,17 @@ body {
     flex-direction: column;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    overflow-x: hidden; /* Add this line */
-    width: 100%; /* Add this line */
+    overflow-x: hidden;
+    width: 100%;
 }
 
-h2{
+h2 {
     text-align: center;
     color: var(--text-primary);
 }
 
-h1, h3 {
+h1,
+h3 {
     color: var(--text-primary);
 }
 
@@ -45,9 +46,9 @@ p {
 
 .container {
     flex: 1;
-    width: 90%; /* Changed this line */
-    margin: 0 auto; /* Changed this line */
-    padding: 20px; /* Changed this line */
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
     overflow-x: hidden;
 }
 
@@ -75,8 +76,8 @@ p {
     text-decoration: none;
     text-align: center;
     flex: 1;
-    max-width: 200px; /* Add this instead of min-width */
-    width: 200px; /* Add this to ensure equal width */
+    max-width: 200px;
+    width: 200px;
 }
 
 .navbar a:hover {
@@ -101,7 +102,7 @@ footer {
     width: 100%;
     border-top: 1px solid var(--border-color);
     margin-top: auto;
-    font-size: 0.8rem; /* Add this line to keep text small */
+    font-size: 0.8rem;
 }
 
 .profile-section {
@@ -135,33 +136,33 @@ footer {
         text-align: center;
     }
 
-    .profile-image img {    
+    .profile-image img {
         width: 280px;
         height: 280px;
     }
 
     .navbar {
-        flex-direction: row; /* Change to row instead of column */
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap; /* Add this to allow wrapping on smaller screens */
+        flex-wrap: wrap;
         padding: 0;
         margin: 0;
     }
 
     .navbar a {
         padding: 15px;
-        width: 33.33%; /* Make each link take up a third of the space */
-        max-width: none; /* Remove max-width constraint on mobile */
+        width: 33.33%;
+        max-width: none;
         font-size: 0.9rem;
     }
 
     .navbar a:last-child {
         border-bottom: none;
     }
-    
+
     footer {
-        font-size: 0.8rem; /* Keep the same size in mobile */
+        font-size: 0.8rem;
     }
 }
 
@@ -171,15 +172,14 @@ footer {
     color: var(--text-primary);
 }
 
-/* Add this media query at the end of your file */
+
 @media screen and (max-width: 768px) {
     .container {
-        width: 100%; /* Changed this line */
-        padding: 20px; /* Changed this line */
-        box-sizing: border-box; /* Added this line */
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
-    
-    /* Ensure all content respects viewport width */
+
     img {
         max-width: 100%;
         height: auto;
@@ -189,8 +189,8 @@ footer {
 .info-sections {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px; /* Added this line */
-    box-sizing: border-box; /* Added this line */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .info-sections ul {
@@ -204,12 +204,12 @@ footer {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 300px)); /* Changed this line */
-    gap: 4rem; /* Increased horizontal gap between categories */
+    grid-template-columns: repeat(3, minmax(0, 300px));
+    gap: 4rem;
     margin: 2rem auto;
-    justify-content: center; /* Added this line */
+    justify-content: center;
     max-width: 1200px;
-    padding: 0 1rem; /* Added horizontal padding */
+    padding: 0 1rem;
 }
 
 .skill-category {
@@ -217,7 +217,7 @@ footer {
     padding: 1.5rem;
     border-radius: 5px;
     border: 1px solid var(--border-color);
-    width: 100%; /* Changed this line */
+    width: 100%;
     max-width: 300px;
     margin: 0 auto;
 }
@@ -245,22 +245,22 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 0;
-        width: 100%; /* Changed this line */
+        width: 100%;
         margin: 2rem auto;
-        justify-items: center; /* Add this to center items */
-        box-sizing: border-box; /* Added this line */
+        justify-items: center;
+        box-sizing: border-box;
     }
 
     .skill-category {
-        width: 100%; /* Changed from 90% */
+        width: 100%;
         max-width: 280px;
-        margin: 0 auto; /* Center the boxes */
+        margin: 0 auto;
     }
 
     .info-sections {
-        width: 100%; /* Added this line */
-        padding: 0 15px; /* Added this line */
-        box-sizing: border-box; /* Added this line */
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
