@@ -72,6 +72,7 @@ p {
     text-align: center;
     flex: 1;
     max-width: 200px; /* Add this instead of min-width */
+    width: 200px; /* Add this to ensure equal width */
 }
 
 .navbar a:hover {
@@ -137,17 +138,18 @@ footer {
 
     .navbar {
         flex-direction: row; /* Change to row instead of column */
-        justify-content: space-evenly; /* Change to space-evenly */
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap; /* Add this to allow wrapping on smaller screens */
         padding: 0;
         margin: 0;
     }
 
     .navbar a {
         padding: 15px;
-        flex: 0 1 auto; /* Change flex property */
-        font-size: 0.9rem;
+        width: 33.33%; /* Make each link take up a third of the space */
         max-width: none; /* Remove max-width constraint on mobile */
+        font-size: 0.9rem;
     }
 
     .navbar a:last-child {
