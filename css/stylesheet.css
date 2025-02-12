@@ -45,11 +45,10 @@ p {
 
 .container {
     flex: 1;
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-    max-width: 100%; /* Add this line */
-    overflow-x: hidden; /* Add this line */
+    width: 90%; /* Changed this line */
+    margin: 0 auto; /* Changed this line */
+    padding: 20px; /* Changed this line */
+    overflow-x: hidden;
 }
 
 .header {
@@ -175,7 +174,9 @@ footer {
 /* Add this media query at the end of your file */
 @media screen and (max-width: 768px) {
     .container {
-        width: 95%; /* Make container wider on mobile */
+        width: 100%; /* Changed this line */
+        padding: 20px; /* Changed this line */
+        box-sizing: border-box; /* Added this line */
     }
     
     /* Ensure all content respects viewport width */
@@ -188,6 +189,8 @@ footer {
 .info-sections {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px; /* Added this line */
+    box-sizing: border-box; /* Added this line */
 }
 
 .info-sections ul {
@@ -201,10 +204,12 @@ footer {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 300px)); /* Changed this line */
+    gap: 4rem; /* Increased horizontal gap between categories */
     margin: 2rem auto;
+    justify-content: center; /* Added this line */
     max-width: 1200px;
+    padding: 0 1rem; /* Added horizontal padding */
 }
 
 .skill-category {
@@ -212,6 +217,9 @@ footer {
     padding: 1.5rem;
     border-radius: 5px;
     border: 1px solid var(--border-color);
+    width: 100%; /* Changed this line */
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .skill-category h3 {
@@ -235,11 +243,26 @@ footer {
 @media (max-width: 768px) {
     .skills-container {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 0 1rem;
+        gap: 2rem;
+        padding: 0;
+        width: 100%; /* Changed this line */
+        margin: 2rem auto;
+        justify-items: center; /* Add this to center items */
+        box-sizing: border-box; /* Added this line */
     }
 
     .skill-category {
-        width: 100%;
+        width: 100%; /* Changed from 90% */
+        max-width: 280px;
+        margin: 0 auto; /* Center the boxes */
+    }
+
+    .info-sections {
+        width: 100%; /* Added this line */
+        padding: 0 15px; /* Added this line */
+        box-sizing: border-box; /* Added this line */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
