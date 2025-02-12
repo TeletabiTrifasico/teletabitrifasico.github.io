@@ -24,7 +24,12 @@ body {
     width: 100%; /* Add this line */
 }
 
-h1, h2, h3 {
+h2{
+    text-align: center;
+    color: var(--text-primary);
+}
+
+h1, h3 {
     color: var(--text-primary);
 }
 
@@ -113,8 +118,8 @@ footer {
 }
 
 .profile-image img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--border-color);
@@ -178,4 +183,18 @@ footer {
         max-width: 100%;
         height: auto;
     }
+}
+
+.info-sections {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-sections ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.info-sections h2 {
+    margin-top: 2rem;
 }
