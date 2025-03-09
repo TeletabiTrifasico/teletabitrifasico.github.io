@@ -50,6 +50,7 @@ p {
     margin: 0 auto;
     padding: 20px;
     overflow-x: hidden;
+    max-width: 1000px;
 }
 
 .header {
@@ -92,6 +93,17 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
+}
+
+.project ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.project li {
+    margin: 0.1rem 0;
+    line-height: 1.6;
+    color: var(--text-secondary);
 }
 
 footer {
