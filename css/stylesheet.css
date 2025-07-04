@@ -93,6 +93,61 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.engine-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.engine-badge img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.engine-badge.unity {
+    background: linear-gradient(135deg, #000000, #333333);
+}
+
+.engine-badge.unity img {
+    margin-left: -3px;
+}
+
+.engine-badge.unreal {
+    background: linear-gradient(135deg, #0e1128, #313c5c);
+}
+
+.engine-badge.godot {
+    background: linear-gradient(135deg, #478cbf, #5fb3ea);
+}
+
+@media (max-width: 768px) {
+    .engine-badge {
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .engine-badge img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .engine-badge.unity img {
+        margin-left: -3px;
+    }
 }
 
 .project ul {
