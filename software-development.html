@@ -22,50 +22,51 @@
         <p>Welcome to my software development portfolio. Here are some of the projects I've worked on:</p>
 
         <div class="project">
-            <h2>Project 1: GameCriticCentral</h2>
+            <h2>Project 1: Chapeau</h2>
             <p>
-                In my first year at university, the first proyect I had to develop was a website using HTML and CSS. The site features 
-                a homepage showcasing four of my favorite games, each accompanied by its trailer. Clicking on a game provides 
-                access to images and an overview of the game. A navigation bar at the top allows users to switch between the 
-                overview, a personal review enriched with images, and a short gameplay video.
+                ChapeauG5 is a desktop application I built as part of a team project to manage the full operations of a restaurant. 
+                It’s developed in C# using .NET 8.0 and Windows Forms, and it handles everything from taking orders and tracking stock 
+                to managing staff roles. One of the best things about the project is how each type of employee waiter, bar staff, 
+                kitchen, or manager gets their own custom interface and access level. It really helped us think through how different 
+                roles interact with the system in a real restaurant setting.
             </p>
-            <a href="https://github.com/username/task-manager" target="_blank">View Project</a>
+            <p>
+                On the technical side, the app is structured using a layered architecture. We kept the logic clean by separating the 
+                code into different projects for models, data access (DAL), services, and UI. Everything is backed by a SQL Server database, 
+                which keeps track of orders, inventory, employees, and more. This project really helped me get comfortable with building 
+                larger-scale desktop apps, structuring code in a maintainable way, and thinking like a developer working on real business software.
+            </p>
+            <a href="https://github.com/TeletabiTrifasico/ChapeauG5" target="_blank">View Project</a>
         </div>
 
         <div class="project">
-            <h2>Project 2: Someren</h2>
+            <h2>Project 2: PHP Webshop</h2>
+            <h3>Version 1</h3>
             <p>
-                For my second project, I developed a C# application using Windows Forms for the front end and an Azure SQL database 
-                for data management. This project required me to design a multi-layered application with a 4-layer architecture, 
-                implementing database access through C# code.
+                For my second project, I developed a classic PHP-based webshop, my first project using PHP. 
+                This platform allows users to sell or buy rare items such as clocks, video games, and jewelry. 
+                It features user authentication, product listings and direct purchases. This project was a major 
+                step in learning PHP and understanding how to build dynamic, user-driven web applications from scratch.
             </p>
+            <a href="https://github.com/TeletabiTrifasico/webshop" target="_blank">View Project</a>
+
+            <h3>Version 2</h3>
             <p>
-                The application was created to manage a study trip to Someren, allowing students and lecturers to register, track 
-                activities, and manage accommodations. It also included a drink stock system for a social event, handling transactions, 
-                VAT calculations, and inventory management.
+                Building on my experience, I created a second version of the webshop with a more modern, professional stack. 
+                This version uses a PHP 8 backend connected to a Vue.js 3 frontend and a MySQL 8 database, all running 
+                inside Docker containers. The platform includes real-time shopping cart management, a full checkout process 
+                with order confirmation, user authentication through JWT tokens, and a role-based access system for users 
+                and admins. Admins can manage products, users, and orders via a dedicated dashboard, while users can browse 
+                products with detailed views and upload images for listings. The webshop is fully responsive, offering an 
+                optimized experience across mobile, tablet, and desktop devices.
             </p>
-            <a href="https://github.com/username/e-commerce-website" target="_blank">View Project</a>
+            <a href="https://github.com/TeletabiTrifasico/webshop2" target="_blank">View Project</a>
         </div>
 
         <div class="project">
-            <h2>Project 3: PHP Webshop</h2>
+            <h2>Project 3: Garden Group</h2>    
             <p>
-                For my third project, I developed a PHP-based webshop, my first project using PHP. The platform allows users to sell, 
-                buy, and bid on rare items such as clocks, video games, and jewelry.
-            </p>
-            <p>
-                The webshop includes features like user authentication, product listings, direct purchases, and bidding functionality 
-                with a timer to track auction deadlines. Additionally, it implements a wallet system, ensuring users have sufficient 
-                funds before placing bids. This project was my first project in which I used PHP, and it helped me a lot in learning 
-                the language.
-            </p>
-            <a href="https://github.com/username/personal-blog" target="_blank">View Project</a>
-        </div>
-
-        <div class="project">
-            <h2>Project 4: Garden Group</h2>    
-            <p>
-                For my fourth project, I worked on a ticketing system for Garden Group, developed in C# and XAML as part of a university 
+                For my third project, I worked on a ticketing system for Garden Group, developed in C# and XAML as part of a university 
                 project. This application was designed to streamline issue tracking and support requests within an organization.
             </p>
             <p>
@@ -77,13 +78,13 @@
                 This project strengthened my skills in C# application development, XAML UI design, and database management, providing a hands-on 
                 experience in creating a functional and user-friendly system.
             </p>
-            <a href="https://github.com/username/personal-blog" target="_blank">View Project</a>
+            <a href="https://github.com/TeletabiTrifasico/GardenGroup" target="_blank">View Project</a>
         </div>
 
         <div class="project">
-            <h2>Project 5: Haarlem Festival</h2>
+            <h2>Project 4: Haarlem Festival</h2>
             <p>
-                For my fifth project, I have been working on Haarlem Festival, the most complex and ambitious project I have tackled so far. 
+                For my fourth project, I have been working on Haarlem Festival, the most complex and ambitious project I have tackled so far. 
                 This dynamic web application is designed to manage and showcase events and festivals in Haarlem, Netherlands, providing an 
                 intuitive platform for both visitors and administrators.
             </p>
@@ -105,7 +106,28 @@
                 development, database design, security implementation, and frontend-backend integration. It has been an incredible learning 
                 experience, allowing me to develop a scalable, feature-rich web application that meets real-world event management needs.
             </P>
-            <a href="https://github.com/username/personal-blog" target="_blank">View Project</a>
+            <a href="https://github.com/ayazspv/NexStageHaarlemFerstival" target="_blank">View Project</a>
+        </div>
+
+        <div class="project">
+            <h2>Project 5: Code Generation</h2>
+            <p>
+                For my fifth project, I collaborated in a team of four to develop a banking application consisting of a full REST API 
+                and a frontend interface. The backend was built using Java and the Spring Boot framework, with the API documented 
+                and accessible through Swagger UI. We started by designing a complete API specification with OpenAPI, which served 
+                as the foundation for development.
+            </p>
+            <p>
+                The application supports core banking functionalities and is secured with JWT-based authentication. It includes full 
+                unit testing (Java) and functional testing using Cucumber, aiming for high code quality and 90%+ test coverage. The 
+                frontend, built with Vue.js, connects seamlessly to the API and is fully responsive across devices. The entire system 
+                was deployed and hosted publicly using containerized environments.
+            </p>
+            <p>
+                This project strengthened my skills in backend development with Java, API-first design, frontend integration, 
+                and professional software development practices like testing, containerization, and CI/CD pipelines.        
+            </p>
+            <a href="https://github.com/TeletabiTrifasico/CodeGeneration" target="_blank">View Project</a>
         </div>
     </div>
 
