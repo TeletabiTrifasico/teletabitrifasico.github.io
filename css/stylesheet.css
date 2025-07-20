@@ -373,3 +373,111 @@ footer {
 .contact-item a:hover {
     color: var(--accent-primary);
 }
+
+/* Current Projects Section */
+.current-projects-section {
+    margin: 3rem 0;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.current-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current-project-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.current-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.engine-symbol {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.engine-symbol img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.engine-symbol.unreal {
+    background: linear-gradient(135deg, #0e1128, #313c5c);
+}
+
+.engine-symbol.unity {
+    background: linear-gradient(135deg, #000000, #333333);
+}
+
+.engine-symbol.unity img {
+    margin-left: -3px;
+}
+
+.engine-symbol.godot {
+    background: linear-gradient(135deg, #478cbf, #5fb3ea);
+}
+
+.current-project-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.current-project-card p {
+    color: var(--text-tertiary);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.completed-projects-section {
+    margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .current-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .current-project-card {
+        padding: 1.5rem;
+    }
+    
+    .engine-symbol {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .engine-symbol img {
+        width: 36px;
+        height: 36px;
+    }
+}
