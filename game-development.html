@@ -1,223 +1,344 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Game Development Projects</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development — Hugo Jimenez Barrasa</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-    </div>
-    <div class="navbar">
-        <a href="index.html">About Me</a>
-        <a href="game-development.html">Game Development</a>
-        <a href="software-development.html">Software Development</a>
-    </div>
 
-    <div class="container">
-        <h1 class="main-title">Game Development Projects</h1>
-        <p>Welcome to my game development portfolio! Here are some of the projects I've worked on:</p>
-
-        <!-- Completed Projects Section -->
-        <div class="completed-projects-section">
-            <h2 class="section-title">Completed Projects</h2>
-            
-            <div class="project">
-                <div class="engine-badge unreal">
-                    <img src="images/unreal-logo.png" alt="Unreal Engine 5">
-                </div>
-                <h2>Infinite Runner Game</h2>
-                <p><strong>Description:</strong><br>
-                This project is a complete 2.5D infinite runner game built in Unreal Engine 5 using Blueprints. The game challenges players to avoid obstacles, collect pickups, and survive for as long as possible on a procedurally generated track. The focus was on developing dynamic, replayable gameplay and mastering modular level design, animation systems, and real-time object spawning.</p>
-                
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li>Procedural level generation with modular tile sets</li>
-                    <li>Player character with animated states (idle, run, jump, slide)</li>
-                    <li>Dynamic enemy and collectible spawning</li>
-                    <li>Real-time scoring system with UI updates</li>
-                    <li>Game-over detection and screen transitions</li>
-                    <li>Combination of 2D sprites and 3D environments for hybrid visual style</li>
-                </ul>
-                <a href="https://github.com/TeletabiTrifasico/InfiniteRunner">View Project</a>
-            </div>
-
-            <div class="project">
-                <div class="engine-badge unreal">
-                    <img src="images/unreal-logo.png" alt="Unreal Engine 5">
-                </div>
-                <h2>Horror Game</h2>
-                <p><strong>Description:</strong><br>
-                This first-person horror game centers around a tense, atmospheric experience where the player must collect hidden items while being stalked by a roaming monster. Built entirely in Blueprints, the game features interactive environments, resource management mechanics, and horror-specific design principles like lighting and sound design.</p>
-                
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li>First-person flashlight mechanic with limited battery power</li>
-                    <li>AI-controlled monster with pursuit behavior</li>
-                    <li>Collectible system with gameplay-linked progression</li>
-                    <li>Custom level layout and environmental storytelling</li>
-                    <li>Ambient sound effects and UI to build tension</li>
-                    <li>Gameplay flow control with win/loss conditions</li>
-                </ul>
-                <a href="https://github.com/TeletabiTrifasico/Horror-Game">View Project</a>
-            </div>
-
-            <div class="project">
-                <div class="engine-badge unreal">
-                    <img src="images/unreal-logo.png" alt="Unreal Engine 5">
-                </div>
-                <h2>Racing Game</h2>
-                <p><strong>Description:</strong><br>
-                This arcade-style racing game demonstrates core vehicle mechanics in Unreal Engine 5, including physics-based driving, lap tracking, and user interface elements for player feedback. The project involved integrating vehicle control logic, input systems, and competitive race flow in a stylized 3D track environment.</p>
-                
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li>Driveable car with arcade handling</li>
-                    <li>Checkpoint and lap-tracking system</li>
-                    <li>Custom race UI with timer and lap count</li>
-                    <li>Start/finish logic and win condition</li>
-                    <li>Multiple vehicle rigging setup (including Blender integration)</li>
-                    <li>Responsive input controls for keyboard/gamepad</li>
-                </ul>
-                <a href="https://github.com/TeletabiTrifasico/Racing-Game">View Project</a>
-            </div>
-
-            <div class="project">
-                <div class="engine-badge unreal">
-                    <img src="images/unreal-logo.png" alt="Unreal Engine 5">
-                </div>
-                <h2>Mini-Survival Game</h2>
-                <p><strong>Description:</strong><br>
-                This mini survival game simulates basic survival mechanics like hunger, thirst, and fatigue while exploring a stylized open-world terrain. Built using Quixel Megascans and UE5's landscape tools, the project emphasizes environmental design and systemic gameplay logic tied to player "needs" and time cycles.</p>
-                
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li>Custom terrain using Quixel Megascans assets</li>
-                    <li>Player movement and input handling</li>
-                    <li>Survival needs: hunger, thirst, and energy management</li>
-                    <li>Functional HUD showing vital stats</li>
-                    <li>Dynamic day-night cycle with lighting transitions</li>
-                    <li>Blueprint-based gameplay loop and win/loss conditions</li>
-                </ul>
-                <a href="https://github.com/TeletabiTrifasico/Survival-Game">View Project</a>
-            </div>
-
-            <div class="project">
-                <div class="engine-badge unreal">
-                    <img src="images/unreal-logo.png" alt="Unreal Engine 5">
-                </div>
-                <h2>Turn Based RPG Game</h2>
-                <p><strong>Description:</strong><br>
-                This project is a turn-based 2.5D RPG created in Unreal Engine 5.6. The game focuses on strategic, turn-based combat between player-controlled characters and enemy units, incorporating magic attacks, healing mechanics, initiative sorting, and dynamic UI feedback. It served as an excellent exercise in building combat systems, gameplay flow, and clean state-driven logic for RPGs.</p>
-                
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li>Custom Player & Enemy Classes: Blueprint-based character data structure with health, damage, and other stats</li>
-                    <li>Bubble Sort for Initiative: Initiative order logic based on speed stats, implemented with Bubble Sort for turn management</li>
-                    <li>Turn Management System: Fully dynamic turn-sequencing logic ensuring alternating player/enemy actions</li>
-                    <li>Projectile & Magic Mechanics: Implementation of animated projectile attacks like Magic Missile including animations</li>
-                    <li>Healing System: Action-based healing mechanics with dedicated logic for recovery, including SFX</li>
-                    <li>UI Systems: Intuitive, reactive interfaces for selecting actions, health bars, and game states</li>
-                    <li>Enemy AI: Automated enemy behavior based on available actions and real-time turn decisions</li>
-                    <li>Combat Feedback: Damage/heal visual feedback, character death handling, game-over screen, and SFX integration</li>
-                </ul>
-                <a href="https://github.com/TeletabiTrifasico/TurnBasedRPG">View Project</a>
-            </div>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">HJB</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="game-development.html" class="active">Game Dev</a></li>
+                <li><a href="software-development.html">Software Dev</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- Current Projects Section -->
-        <div class="current-projects-section">
-            <h2 class="section-title">Currently Working On</h2>
-            <div class="current-projects-grid">
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-tag">Portfolio</span>
+            <h1 class="page-title">Game <span>Dev</span></h1>
+            <p class="page-sub">Welcome to my game development portfolio! Here are some of the projects I've worked on:</p>
+        </div>
+        <div class="page-divider"></div>
+    </section>
+
+    <!-- COMPLETED PROJECTS -->
+    <section class="games-section">
+        <div class="container">
+
+            <div class="game-sec-head reveal">
+                <div class="game-sec-tag"><span class="dot"></span> Completed</div>
+                <h2 class="game-sec-title">Completed Projects</h2>
+            </div>
+
+            <!-- Game 01 -->
+            <article class="game-card reveal">
+                <div class="project-wm">01</div>
+                <div class="game-card-header">
+                    <div>
+                        <span class="project-num">Game 01</span>
+                        <h2 class="project-name">Infinite Runner Game</h2>
+                    </div>
+                    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;">
+                        <div class="ue-badge">
+                            <img src="images/unreal-logo.png" alt="Unreal Engine 5"> Unreal Engine 5
+                        </div>
+                        <a href="https://github.com/TeletabiTrifasico/InfiniteRunner" target="_blank" rel="noopener" class="game-gh">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="game-body">
+                    <p><strong>Description:</strong><br>
+                    This project is a complete 2.5D infinite runner game built in Unreal Engine 5 using Blueprints.
+                    The game challenges players to avoid obstacles, collect pickups, and survive for as long as
+                    possible on a procedurally generated track. The focus was on developing dynamic, replayable
+                    gameplay and mastering modular level design, animation systems, and real-time object spawning.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Procedural level generation with modular tile sets</li>
+                        <li>Player character with animated states (idle, run, jump, slide)</li>
+                        <li>Dynamic enemy and collectible spawning</li>
+                        <li>Real-time scoring system with UI updates</li>
+                        <li>Game-over detection and screen transitions</li>
+                        <li>Combination of 2D sprites and 3D environments for hybrid visual style</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Game 02 -->
+            <article class="game-card reveal">
+                <div class="project-wm">02</div>
+                <div class="game-card-header">
+                    <div>
+                        <span class="project-num">Game 02</span>
+                        <h2 class="project-name">Horror Game</h2>
+                    </div>
+                    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;">
+                        <div class="ue-badge">
+                            <img src="images/unreal-logo.png" alt="Unreal Engine 5"> Unreal Engine 5
+                        </div>
+                        <a href="https://github.com/TeletabiTrifasico/Horror-Game" target="_blank" rel="noopener" class="game-gh">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="game-body">
+                    <p><strong>Description:</strong><br>
+                    This first-person horror game centers around a tense, atmospheric experience where the player
+                    must collect hidden items while being stalked by a roaming monster. Built entirely in Blueprints,
+                    the game features interactive environments, resource management mechanics, and horror-specific
+                    design principles like lighting and sound design.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>First-person flashlight mechanic with limited battery power</li>
+                        <li>AI-controlled monster with pursuit behavior</li>
+                        <li>Collectible system with gameplay-linked progression</li>
+                        <li>Custom level layout and environmental storytelling</li>
+                        <li>Ambient sound effects and UI to build tension</li>
+                        <li>Gameplay flow control with win/loss conditions</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Game 03 -->
+            <article class="game-card reveal">
+                <div class="project-wm">03</div>
+                <div class="game-card-header">
+                    <div>
+                        <span class="project-num">Game 03</span>
+                        <h2 class="project-name">Racing Game</h2>
+                    </div>
+                    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;">
+                        <div class="ue-badge">
+                            <img src="images/unreal-logo.png" alt="Unreal Engine 5"> Unreal Engine 5
+                        </div>
+                        <a href="https://github.com/TeletabiTrifasico/Racing-Game" target="_blank" rel="noopener" class="game-gh">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="game-body">
+                    <p><strong>Description:</strong><br>
+                    This arcade-style racing game demonstrates core vehicle mechanics in Unreal Engine 5, including
+                    physics-based driving, lap tracking, and user interface elements for player feedback. The project
+                    involved integrating vehicle control logic, input systems, and competitive race flow in a
+                    stylized 3D track environment.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Driveable car with arcade handling</li>
+                        <li>Checkpoint and lap-tracking system</li>
+                        <li>Custom race UI with timer and lap count</li>
+                        <li>Start/finish logic and win condition</li>
+                        <li>Multiple vehicle rigging setup (including Blender integration)</li>
+                        <li>Responsive input controls for keyboard/gamepad</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Game 04 -->
+            <article class="game-card reveal">
+                <div class="project-wm">04</div>
+                <div class="game-card-header">
+                    <div>
+                        <span class="project-num">Game 04</span>
+                        <h2 class="project-name">Mini-Survival Game</h2>
+                    </div>
+                    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;">
+                        <div class="ue-badge">
+                            <img src="images/unreal-logo.png" alt="Unreal Engine 5"> Unreal Engine 5
+                        </div>
+                        <a href="https://github.com/TeletabiTrifasico/Survival-Game" target="_blank" rel="noopener" class="game-gh">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="game-body">
+                    <p><strong>Description:</strong><br>
+                    This mini survival game simulates basic survival mechanics like hunger, thirst, and fatigue
+                    while exploring a stylized open-world terrain. Built using Quixel Megascans and UE5's landscape
+                    tools, the project emphasizes environmental design and systemic gameplay logic tied to player
+                    "needs" and time cycles.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Custom terrain using Quixel Megascans assets</li>
+                        <li>Player movement and input handling</li>
+                        <li>Survival needs: hunger, thirst, and energy management</li>
+                        <li>Functional HUD showing vital stats</li>
+                        <li>Dynamic day-night cycle with lighting transitions</li>
+                        <li>Blueprint-based gameplay loop and win/loss conditions</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Game 05 -->
+            <article class="game-card reveal">
+                <div class="project-wm">05</div>
+                <div class="game-card-header">
+                    <div>
+                        <span class="project-num">Game 05</span>
+                        <h2 class="project-name">Turn Based RPG Game</h2>
+                    </div>
+                    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;">
+                        <div class="ue-badge">
+                            <img src="images/unreal-logo.png" alt="Unreal Engine 5"> Unreal Engine 5
+                        </div>
+                        <a href="https://github.com/TeletabiTrifasico/TurnBasedRPG" target="_blank" rel="noopener" class="game-gh">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="game-body">
+                    <p><strong>Description:</strong><br>
+                    This project is a turn-based 2.5D RPG created in Unreal Engine 5.6. The game focuses on
+                    strategic, turn-based combat between player-controlled characters and enemy units, incorporating
+                    magic attacks, healing mechanics, initiative sorting, and dynamic UI feedback. It served as an
+                    excellent exercise in building combat systems, gameplay flow, and clean state-driven logic
+                    for RPGs.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Custom Player &amp; Enemy Classes: Blueprint-based character data structure with health, damage, and other stats</li>
+                        <li>Bubble Sort for Initiative: Initiative order logic based on speed stats, implemented with Bubble Sort for turn management</li>
+                        <li>Turn Management System: Fully dynamic turn-sequencing logic ensuring alternating player/enemy actions</li>
+                        <li>Projectile &amp; Magic Mechanics: Implementation of animated projectile attacks like Magic Missile including animations</li>
+                        <li>Healing System: Action-based healing mechanics with dedicated logic for recovery, including SFX</li>
+                        <li>UI Systems: Intuitive, reactive interfaces for selecting actions, health bars, and game states</li>
+                        <li>Enemy AI: Automated enemy behavior based on available actions and real-time turn decisions</li>
+                        <li>Combat Feedback: Damage/heal visual feedback, character death handling, game-over screen, and SFX integration</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- IN PROGRESS -->
+    <section class="wip-section">
+        <div class="container">
+            <div class="game-sec-head reveal">
+                <div class="game-sec-tag"><span class="dot"></span> In Progress</div>
+                <h2 class="game-sec-title">Currently Working On</h2>
+            </div>
+            <div class="wip-grid">
+
+                <div class="wip-card reveal d1">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>2.5D Farming RPG</h3>
                     <p>Build relationships, farm, and explore in a charming semi-2D world.</p>
                 </div>
-                
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+
+                <div class="wip-card reveal d2">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Tower Defense Game</h3>
                     <p>Strategically place towers and fend off waves of enemies.</p>
                 </div>
-                
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+
+                <div class="wip-card reveal d3">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Plane Arcade Game</h3>
                     <p>Fast-paced arcade flight game with combat and obstacle navigation.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d4">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Multiplayer Game</h3>
                     <p>Online game with real-time multiplayer mechanics and networking.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d1">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>RTS Game</h3>
                     <p>Command units, gather resources, and dominate the battlefield.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d2">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Visual Stunning Walking Simulator</h3>
                     <p>Immersive exploration game with breathtaking visuals and ambient storytelling.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d3">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>First-Person Shooter (FPS)</h3>
                     <p>Dynamic FPS with weapon systems, enemies, and responsive combat.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d4">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Platformer Game</h3>
                     <p>Classic 2D/3D platformer with tight controls and creative level design.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d1">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Action RPG</h3>
                     <p>Third-person action RPG with real-time combat and progression systems.</p>
                 </div>
 
-                <div class="current-project-card">
-                    <div class="engine-symbol unreal">
-                        <img src="images/unreal-logo.png" alt="Unreal Engine">
+                <div class="wip-card reveal d2">
+                    <div class="wip-top">
+                        <div class="wip-engine"><img src="images/unreal-logo.png" alt="Unreal Engine"></div>
+                        <span class="wip-badge"><span class="wip-dot"></span>WIP</span>
                     </div>
                     <h3>Puzzle Game</h3>
                     <p>Logic-based puzzle experience with clever mechanics and brain-teasing levels.</p>
                 </div>
+
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Hugo Jiménez Barrasa. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Hugo Jiménez Barrasa. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">About</a>
+                <a href="software-development.html">Software Dev</a>
+                <a href="https://github.com/TeletabiTrifasico" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="js/main.js"></script>
+</body>
 </html>

@@ -1,162 +1,286 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Jimenez Barrasa — Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-    </div>
-    <div class="navbar">
-        <a href="index.html">About Me</a>
-        <a href="game-development.html">Game Development</a>
-        <a href="software-development.html">Software Development</a>
-    </div>
 
-    <div class="container">
-        <h1 class="main-title">About Me</h1>
-        <div class="profile-section">
-            <div class="profile-image">
-                <img src="images/profile-photo.jpg" alt="Hugo's Profile Picture">
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">HJB</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="game-development.html">Game Dev</a></li>
+                <li><a href="software-development.html">Software Dev</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-blob-1"></div>
+        <div class="hero-blob-2"></div>
+        <div class="hero-dots"></div>
+
+        <div class="hero-body">
+            <div class="hero-left">
+                <p class="hero-eyebrow">Game Developer &amp; Software Engineer</p>
+                <h1 class="hero-name">
+                    <span class="ln ln-1">Hugo</span>
+                    <span class="ln ln-2">Jimenez</span>
+                    <span class="ln ln-3">Barrasa</span>
+                </h1>
+                <p class="hero-sub">
+                    I build <span class="typed-word" id="typedText">games</span><span class="cursor">_</span>
+                </p>
+                <p class="hero-loc">
+                    <i class="fas fa-map-marker-alt"></i>&nbsp; Canary Islands, Spain
+                </p>
+                <div class="hero-actions">
+                    <a href="game-development.html" class="btn-primary">View Projects &nbsp;→</a>
+                    <a href="#contact" class="btn-secondary"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
             </div>
-            <div class="profile-text">
-                <p>
-                    Hi, I’m Hugo Jimenez Barrasa, a 19-year-old dreamer and game developer from the Canary Islands,
-                    Spain.
-                    My love story with game development began when I was just 7 years old. I wasn’t just playing games I
-                    was envisioning worlds, mechanics, and stories of my own. From that moment, I knew creating games
-                    wasn’t
-                    just a hobby for me; it was my calling.
-                </p>
-                <P>
-                    Since then, I’ve dedicated myself to this craft, diving deep into game design and development with
-                    an
-                    insatiable curiosity. I’ve spent countless hours experimenting, learning, and bringing my own
-                    projects to life.
-                    Every challenge I’ve faced has fueled my determination, and every success has amplified my passion.
-                    Game development isn’t just what I do it’s who I am.
-                </P>
-                <p>
-                    Currently, I’m pursuing a degree in IT at Inholland University of Applied Sciences in the
-                    Netherlands,
-                    where I’m building a strong foundation in programming, design, and technology. I’m committed to
-                    honing my craft
-                    and contributing to innovative, impactful projects that push the boundaries of what games can
-                    achieve.
-                </p>
+
+            <div class="hero-right">
+                <div class="hero-photo-wrap">
+                    <img src="images/profile-photo.jpg" alt="Hugo Jimenez Barrasa">
+                </div>
             </div>
         </div>
 
-        <div class="info-sections">
-            <h2>Background</h2>
-            <p>
-                I have a solid foundation in information technology and I am currently pursuing my degree at Inholland 
-                University of Applied Sciences in the Netherlands. Over the past few years, I've immersed myself in various 
-                development projects, mastering programming languages such as C#, Java, and Python. My proficiency extends 
-                to working with game engines like Unity, Unreal Engine, and Godot, enabling me to bring creative worlds, 
-                characters, and stories to life. This journey has equipped me with a comprehensive understanding of both 
-                the technical and creative aspects of game development, which I am highly motivated to continue perfecting.
-            </p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-num">19</span>
+                <span class="stat-label">Years Old</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Games Built</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Software Projects</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+                <span class="stat-num">12+</span>
+                <span class="stat-label">Years of Passion</span>
+            </div>
+        </div>
+    </section>
 
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="sec-label">About Me</span>
+                <h2 class="sec-title">Who I <em>Am</em></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        Hi, I'm Hugo Jimenez Barrasa, a 19-year-old dreamer and game developer from the Canary Islands,
+                        Spain. My love story with game development began when I was just 7 years old. I wasn't just
+                        playing games I was envisioning worlds, mechanics, and stories of my own. From that moment, I
+                        knew creating games wasn't just a hobby for me; it was my calling.
+                    </p>
+                    <p>
+                        Since then, I've dedicated myself to this craft, diving deep into game design and development
+                        with an insatiable curiosity. I've spent countless hours experimenting, learning, and bringing
+                        my own projects to life. Every challenge I've faced has fueled my determination, and every
+                        success has amplified my passion. Game development isn't just what I do it's who I am.
+                    </p>
+                    <p>
+                        Currently, I'm pursuing a degree in IT at Inholland University of Applied Sciences in the
+                        Netherlands, where I'm building a strong foundation in programming, design, and technology.
+                        I'm committed to honing my craft and contributing to innovative, impactful projects that push
+                        the boundaries of what games can achieve.
+                    </p>
+                </div>
+                <div class="reveal-r d2">
+                    <div class="about-aside-img">
+                        <img src="images/profile-photo.jpg" alt="Hugo Jimenez Barrasa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section class="section section-alt" id="background">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="sec-label">Background</span>
+                <h2 class="sec-title">My <em>Journey</em></h2>
+            </div>
+            <div class="text-card reveal d1">
+                <p>
+                    I have a solid foundation in information technology and I am currently pursuing my degree at
+                    Inholland University of Applied Sciences in the Netherlands. Over the past few years, I've
+                    immersed myself in various development projects, mastering programming languages such as C#,
+                    Java, and Python. My proficiency extends to working with game engines like Unity, Unreal Engine,
+                    and Godot, enabling me to bring creative worlds, characters, and stories to life. This journey
+                    has equipped me with a comprehensive understanding of both the technical and creative aspects
+                    of game development, which I am highly motivated to continue perfecting.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="sec-label">Skills</span>
+                <h2 class="sec-title">What I <em>Know</em></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal d1">
+                    <div class="skill-icon-w"><i class="fas fa-gamepad"></i></div>
                     <h3>Engines</h3>
-                    <ul>
-                        <li>Unity</li>
-                        <li>Unreal Engine 4/5</li>
-                        <li>Godot</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Unreal Engine 4/5</span>
+                        <span class="skill-tag">Godot</span>
+                    </div>
                 </div>
-
-                <div class="skill-category">
+                <div class="skill-card reveal d2">
+                    <div class="skill-icon-w"><i class="fas fa-code"></i></div>
                     <h3>Programming</h3>
-                    <ul>
-                        <li>C#</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>GDScript</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">GDScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
                 </div>
-
-                <div class="skill-category">
+                <div class="skill-card reveal d3">
+                    <div class="skill-icon-w"><i class="fas fa-users"></i></div>
                     <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Agile Methodologies</li>
-                        <li>Teamwork & Collaboration</li>
-                        <li>Adaptability & Problem-Solving</li>
-                        <li>Playtesting & Iterative Development</li>
-                        <li>Strong Communication</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h2>Interests</h2>
-            <p>
-                In my free time, I enjoy staying updated on developments in game engines and learning new programming 
-                languages. I consider video games to be the finest expression of art, seamlessly blending storytelling, 
-                art, and experiences. Playing games not only provides entertainment but also inspires my own creativity.
-            </p>
-            <p>
-                While I haven't yet had the opportunity to participate in a game jam due to academic commitments, I am 
-                eager and excited to engage in such collaborative projects in the future.
-            </p>
-            <p>
-                I have a profound interest in digital art and have been drawing and creating art for as long as I can 
-                remember. Recently, I've begun exploring 3D modeling to expand my artistic skill set.
-            </p>
-            <p>
-                Writing and storytelling have always been strengths of mine, with teachers and family consistently praising 
-                my abilities in these areas. Cinema and cinematography have been significant sources of inspiration since my 
-                childhood, fueling my desire to incorporate rich narratives and visual storytelling into the games I develop. 
-                Additionally, I have a deep love for reading fiction and philosophy, finding inspiration in exploring diverse 
-                worlds and ideas. I aspire to infuse these literary influences into my game development projects, creating 
-                immersive and thought-provoking experiences.
-            </p>
-            <p>
-                Beyond my creative pursuits, I am passionate about gymnastics and surfing. Engaging in gymnastics has instilled 
-                discipline, precision, and a strong work ethic, while surfing has taught me patience, adaptability, and resilience. 
-                These activities not only keep me physically active but also contribute to my mental well-being and provide fresh 
-                perspectives that I bring into my projects.
-            </p>
-            <p>
-                This blend of technical curiosity, artistic expression, and physical activity shapes my holistic approach to 
-                life and game development.
-            </p>
-
-            <h2>Contact</h2>
-            <div class="contact-container">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:hugojiba@gmail.com">Hugojiba@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/hugo-jimenez-barrasa" target="_blank">Hugo Jimenez Barrasa</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/TeletabiTrifasico" target="_blank">TeletabiTrifasico</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+34601746097">+34 601 74 60 97</a>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agile Methodologies</span>
+                        <span class="skill-tag">Teamwork &amp; Collaboration</span>
+                        <span class="skill-tag">Adaptability &amp; Problem-Solving</span>
+                        <span class="skill-tag">Playtesting &amp; Iterative Dev</span>
+                        <span class="skill-tag">Strong Communication</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- INTERESTS -->
+    <section class="section section-alt" id="interests">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="sec-label">Interests</span>
+                <h2 class="sec-title">Beyond <em>Code</em></h2>
+            </div>
+            <div class="interests-prose reveal">
+                <p>
+                    In my free time, I enjoy staying updated on developments in game engines and learning new
+                    programming languages. I consider video games to be the finest expression of art, seamlessly
+                    blending storytelling, art, and experiences. Playing games not only provides entertainment
+                    but also inspires my own creativity.
+                </p>
+                <p>
+                    While I haven't yet had the opportunity to participate in a game jam due to academic commitments,
+                    I am eager and excited to engage in such collaborative projects in the future.
+                </p>
+                <p>
+                    I have a profound interest in digital art and have been drawing and creating art for as long as
+                    I can remember. Recently, I've begun exploring 3D modeling to expand my artistic skill set.
+                </p>
+                <p>
+                    Writing and storytelling have always been strengths of mine, with teachers and family
+                    consistently praising my abilities in these areas. Cinema and cinematography have been
+                    significant sources of inspiration since my childhood, fueling my desire to incorporate rich
+                    narratives and visual storytelling into the games I develop. Additionally, I have a deep love
+                    for reading fiction and philosophy, finding inspiration in exploring diverse worlds and ideas.
+                    I aspire to infuse these literary influences into my game development projects, creating
+                    immersive and thought-provoking experiences.
+                </p>
+                <p>
+                    Beyond my creative pursuits, I am passionate about gymnastics and surfing. Engaging in
+                    gymnastics has instilled discipline, precision, and a strong work ethic, while surfing has
+                    taught me patience, adaptability, and resilience. These activities not only keep me physically
+                    active but also contribute to my mental well-being and provide fresh perspectives that I bring
+                    into my projects.
+                </p>
+                <p>
+                    This blend of technical curiosity, artistic expression, and physical activity shapes my
+                    holistic approach to life and game development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="sec-label">Contact</span>
+                <h2 class="sec-title">Get In <em>Touch</em></h2>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:hugojiba@gmail.com" class="contact-card reveal d1">
+                    <div class="contact-ico"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">Hugojiba@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/hugo-jimenez-barrasa" target="_blank" rel="noopener" class="contact-card reveal d2">
+                    <div class="contact-ico"><i class="fab fa-linkedin"></i></div>
+                    <div class="contact-info">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">Hugo Jimenez Barrasa</span>
+                    </div>
+                </a>
+                <a href="https://github.com/TeletabiTrifasico" target="_blank" rel="noopener" class="contact-card reveal d3">
+                    <div class="contact-ico"><i class="fab fa-github"></i></div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">TeletabiTrifasico</span>
+                    </div>
+                </a>
+                <a href="tel:+34601746097" class="contact-card reveal d4">
+                    <div class="contact-ico"><i class="fas fa-phone"></i></div>
+                    <div class="contact-info">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+34 601 74 60 97</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Hugo Jiménez Barrasa. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Hugo Jiménez Barrasa. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="game-development.html">Game Dev</a>
+                <a href="software-development.html">Software Dev</a>
+                <a href="https://github.com/TeletabiTrifasico" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="js/main.js"></script>
+</body>
 </html>
