@@ -72,7 +72,7 @@
     const el = document.getElementById('typedText');
     if (!el) return;
 
-    const words   = ['games', 'worlds', 'experiences', 'software', 'stories', 'the future'];
+    const words   = ['games', 'worlds', 'experiences', 'software', 'stories'];
     let wIdx      = 0;
     let cIdx      = 0;
     let deleting  = false;
